@@ -1,0 +1,23 @@
+.gridGeneral { 
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 3.5rem; /* my-14 -> 14 * 0.25rem = 3.5rem (56px) */
+  margin-bottom: 3.5rem;
+  padding-left: 12rem; /* px-48 -> 48 * 0.25rem = 12rem (192px) */
+  padding-right: 12rem;
+  
+}
+.gridSidebar { 
+    grid-column: span 3 / span 3;
+    background-color: white;
+    border-radius: 1rem; /* rounded-2xl -> 2xl = 1rem (16px) */
+}
+
+.gridDashboard { 
+    grid-column: span 9 / span 9;
+    background-color: white;
+    border-radius: 1rem; /* rounded-2xl -> 2xl = 1rem (16px) */
+    
+
+}   
