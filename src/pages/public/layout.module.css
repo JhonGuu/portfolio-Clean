@@ -1,23 +1,57 @@
-.gridGeneral { 
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 1.5rem;
-    margin-top: 3.5rem; /* my-14 -> 14 * 0.25rem = 3.5rem (56px) */
-  margin-bottom: 3.5rem;
-  padding-left: 12rem; /* px-48 -> 48 * 0.25rem = 12rem (192px) */
-  padding-right: 12rem;
+.divGeneral {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1.5rem; /* 6 (gap-6) */
+  padding-left: 1.25rem; /* 5 (px-5) */
+  padding-right: 1.25rem; /* 5 (px-5) */
+  margin-top: 3.5rem; /* 14 (my-14) */
+  margin-bottom: 3.5rem; /* 14 (my-14) */
+
   
 }
-.gridSidebar { 
-    grid-column: span 3 / span 3;
-    background-color: white;
-    border-radius: 1rem; /* rounded-2xl -> 2xl = 1rem (16px) */
+@media (min-width: 640px) {
+  .divGeneral {
+    padding-left: 5rem; /* 80px */
+    padding-right: 5rem; /* 80px */
+  }
 }
 
-.gridDashboard { 
-    grid-column: span 9 / span 9;
-    background-color: white;
-    border-radius: 1rem; /* rounded-2xl -> 2xl = 1rem (16px) */
-    
+@media (min-width: 768px) {
+  .divGeneral {
+    padding-left: 8rem; /* 128px */
+    padding-right: 8rem; /* 128px */
+  }
+}
 
-}   
+.divSidebar {
+  grid-column: span 12 / span 12;
+  padding: 1rem; /* 4 (p-4) */
+  text-align: center;
+  background-color: white;
+  border-radius: 1rem; /* 2xl (rounded-2xl) */
+}
+
+.divDashboard {
+  grid-column: span 12 / span 12;
+  background-color: white;
+  border-radius: 1rem; /* 2xl (rounded-2xl) */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .gridGeneral {
+    padding-left: 12rem; /* 48 (lg:px-48) */
+    padding-right: 12rem; /* 48 (lg:px-48) */
+  }
+  .divSidebar {
+    grid-column: span 3 / span 3;
+  }
+  .divDashboard{
+    grid-column: span 9 / span 9;
+  }
+}
+
+
+

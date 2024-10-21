@@ -1,0 +1,24 @@
+.divGeneral { 
+    display: flex;               /* Activa el modo flexbox */
+    padding-left: 0.75rem;       /* 12px de padding a la izquierda */
+    padding-right: 0.75rem;      /* 12px de padding a la derecha */
+    padding-top: 0.5rem;         /* 8px de padding arriba */
+    padding-bottom: 0.5rem;      /* 8px de padding abajo */
+    gap: 0.75rem;                /* 12px de espacio entre los elementos hijos (equivalente a space-x-3) */
+    overflow-x: auto;          /* Desplazamiento horizontal si el contenido es demasiado ancho */
+    list-style: none;            /* Elimina los marcadores de lista */
+}
+
+.active { 
+    color:#4ade80;
+    text-transform: capitalize;  /* Capitaliza la primera letra de cada palabra */
+    cursor: pointer;             /* Cambia el cursor a puntero cuando se pasa el mouse */
+}
+.liNavItem { 
+    text-transform: capitalize;  /* Capitaliza la primera letra de cada palabra */
+    cursor: pointer;             /* Cambia el cursor a puntero cuando se pasa el mouse */
+}
+
+.liNavItem:hover { 
+    color: #4ade80;
+}

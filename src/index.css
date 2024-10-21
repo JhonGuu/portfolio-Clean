@@ -1,4 +1,15 @@
 body {
   background-color: black;
   font-family: sans-serif;
+  color: #354358;
+}
+
+a {
+  text-decoration: none; /* Quitar el subrayado */
+  color: inherit; /* Hereda el color del texto del elemento padre */
+  background: none; /* Quitar cualquier fondo */
+  border: none; /* Eliminar cualquier borde */
+  padding: 0; /* Eliminar relleno */
+  margin: 0; /* Eliminar margen */
+  font: inherit; /* Heredar la tipografía del elemento padre */
 }

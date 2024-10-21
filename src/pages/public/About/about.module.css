@@ -1,0 +1,61 @@
+.divGeneral { 
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    flex-grow: 1;
+}
+
+.h5Dashboard { 
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: medium;
+}
+
+.divOffer { 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 1.25rem;
+    background-color: #adacac; 
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    flex-grow: 1;
+
+}
+.h6Offer { 
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+}
+
+
+
+.divServices {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.divServiceCard { 
+    background-color: #d5d3d3;
+    border-radius: 0.5rem;
+}
+
+
+@media (min-width: 640px) {
+
+}
+
+
+@media (min-width: 1024px) { 
+    .divServices { 
+        grid-column: span 2 / span 2;
+    }
+    .divServiceCard { 
+        grid-column: span 1 / span 1;
+    }
+}
+

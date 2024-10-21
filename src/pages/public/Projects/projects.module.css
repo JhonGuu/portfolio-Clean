@@ -1,0 +1,32 @@
+.divGeneral { 
+    padding: 0.5rem 1.25rem;
+    height: 65vh;
+    overflow-y: scroll;
+}
+.divGeneralCards { 
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr)); /* Equivalente a grid-cols-12 en Tailwind */
+    gap: 1rem; /* Equivalente a gap-4 en Tailwind */
+    margin: 0.75rem 0; /* Equivalente a my-3 en Tailwind (margen superior e inferior) */
+}
+
+.divCard {
+    grid-column: span 12 / span 12; /* Equivalente a col-span-12 en Tailwind */
+    padding: 0.5rem; /* Equivalente a p-2 en Tailwind */
+    background-color: #e5e7eb;
+    border-radius: 0.5rem;
+  }
+  
+  @media (min-width: 640px) { /* Equivalente a sm: */
+    .divCard {
+      grid-column: span 6 / span 6; /* Equivalente a sm:col-span-6 en Tailwind */
+    }
+  }
+  
+  @media (min-width: 1024px) { /* Equivalente a lg: */
+    .divCard {
+      grid-column: span 4 / span 4; /* Equivalente a lg:col-span-4 en Tailwind */
+    }
+  }
+
