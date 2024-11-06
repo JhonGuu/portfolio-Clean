@@ -15,7 +15,7 @@ import {GiTie} from 'react-icons/gi'
         />
         <h3 className={style.h3Sidebar}><span className={style.spanJhonguu}>JhonGuu</span>DEV</h3>
         <p className={style.pSidebar}>Web Developer</p>
-        <a className={style.aResume}> <GiTie width={6} height={6}/>Download Resume</a>
+        <a className={style.aResume} href='/src/assets/CurriculumJhonGuu.pdf' download='CurriculumJhonGuu.pdf'> <GiTie width={6} height={6}/>Download Resume</a>
         {/* Social Icons */}
         <div className={style.socialIcons}>
             <a href="">

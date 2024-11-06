@@ -12,7 +12,6 @@ function App() {
   return (  
     
       <Layout>
-            <nav>hola soy un nav</nav>
           <Routes>
             <Route path='/' element={<Dashboard/>} />
             <Route path='/about' element={<About/>} />

@@ -1,8 +1,11 @@
+
 .imageProject { 
     cursor: pointer;
 }
 
 .nameProject { 
+  color: white;
+  font-weight: bold;
     margin: 0.5rem 0;
     text-align: center;
 }
@@ -11,77 +14,103 @@
 
 .details {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
     display: grid;
     width: 100%;
     height: auto;
-    color: black;
-    background-color: #f3f4f6; /* Esto es bg-gray-100 en Tailwind */
-    gap: 0 3rem; /* Esto es gap-x-12 en Tailwind (3rem equivale a 48px) */
-    padding: .5rem;
+    color: white;
+    background-color: #090909; /* Esto es bg-gray-100 en Tailwind */
+    column-gap:3rem; /* Esto es gap-x-12 en Tailwind (3rem equivale a 48px) */
+    border-radius:0.75rem;
 }
   
   @media (min-width: 768px) {
     .details {
+      
+      padding: 2.5rem;
       grid-template-columns: repeat(2, minmax(0, 1fr)); /* Esto es equivalente a md:grid-cols-2 en Tailwind */
+      column-gap: 3rem;
     }
     .h2TitleTech {
         font-size: 1.5rem; /* Esto es md:text-2xl (2xl equivale a 24px) */
       }
   }
   
+
+.divImage { 
+  margin-left: 0;
+  width: 200px;
+  height: 150px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f77bbf;
+}
 .closeBtn {
     position: absolute;
     padding: 0.25rem; /* Esto es p-1 en Tailwind (1rem = 16px, por lo que 0.25rem = 4px) */
-    background-color: #e5e7eb; /* Esto es bg-gray-200 en Tailwind */
-    border-radius: 9999px; /* Esto es rounded-full en Tailwind */
+    background: none; /* Esto es bg-gray-200 en Tailwind */
     top: 0.75rem; /* Esto es top-3 (3 * 0.25rem = 0.75rem) */
     right: 0.75rem; /* Esto es right-3 (3 * 0.25rem = 0.75rem) */
     outline: none; /* Esto es focus:outline-none */
+    color:#f77bbf;
 }
 
 .anchorsCard {
-    display: flex; /* Esto es flex en Tailwind */
+  display: flex; /* Esto es flex en Tailwind */
   justify-content: center; /* Esto es justify-center */
-  margin: 1rem 0; /* Esto es my-4 en Tailwind (4 * 0.25rem = 1rem) */
-  gap: 0.75rem; /* Esto es space-x-3 en Tailwind (3 * 0.25rem = 0.75rem) */
-
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.anchorsCard > *:not(:last-child) {
+  margin-right: 0.75rem; /* Esto es space-x-3 en Tailwind */
 }
 .anchor { 
-    display: flex; /* Esto es flex en Tailwind */
+  display: flex; /* Esto es flex en Tailwind */
   align-items: center; /* Esto es items-center */
-  padding: 0.5rem 1rem; /* Esto es px-4 (1rem) y py-2 (0.5rem) */
-  gap: 0.75rem; /* Esto es space-x-3 en Tailwind */
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem; /* Esto es px-4 (1rem) y py-2 (0.5rem) */
   font-size: 1.125rem; /* Esto es text-lg (1.125rem equivale a 18px) */
-  background-color: #e5e7eb; /* Esto es bg-gray-200 en Tailwind */
+  background-color: #000000; /* Esto es bg-gray-200 en Tailwind */
+  color: #f77bbf;
+  border-radius: 10px;
+}
+.anchor > *:not(:last-child) {
+  margin-right: 0.75rem; /* Esto es space-x-3 en Tailwind */
 }
 
 .h2TitleTech { 
-    margin-bottom: 0.75rem; /* Esto es mb-3 en Tailwind (3 * 0.25rem = 0.75rem) */
+  margin-bottom: 0.75rem; /* Esto es mb-3 en Tailwind (3 * 0.25rem = 0.75rem) */
+  margin-left: 0.5rem;
   font-size: 1.25rem; /* Esto es text-xl (1.25rem equivale a 20px) */
   font-weight: 500; /* Esto es font-medium en Tailwind */
 
 }
 
 .h3DescTech {
+     margin-left: 0.5rem;
     margin-bottom: 0.75rem; /* mb-3 */
     font-weight: 500; /* font-medium */
   }
 
 .divKeyTechs {
-    display: flex; /* flex */
+  display: flex; /* flex */
   flex-wrap: wrap; /* flex-wrap */
   margin-top: 1.25rem; /* mt-5 (5 * 0.25rem = 1.25rem) */
+  margin-left: 0.5rem;
   gap: 0.5rem; /* space-x-2 (2 * 0.25rem = 0.5rem) */
   font-size: 0.875rem; /* text-sm (equivale a 14px) */
   letter-spacing: 0.05em; /* tracking-wider (más espacio entre letras) */
 }
 
 .spanKeyTech { 
-    padding: 0.5rem 0.25rem; /* Esto es px-2 (0.5rem = 8px) y py-1 (0.25rem = 4px) */
-  margin: 0.25rem 0; /* my-1 (1 * 0.25rem = 0.25rem) */
-  background-color: #e5e7eb; /* bg-gray-200 */
+  padding-left: 0.5rem; /* px-2 */
+  padding-right: 0.5rem; /* px-2 */
+  padding-top: 0.25rem; /* py-1 */
+  padding-bottom: 0.25rem; /* py-1 */
+  margin-top: 0.25rem; /* my-1 */
+  margin-bottom: 0.25rem; /* my-1 */
+  background-color: #000000; /* bg-gray-200 */
   border-radius: 0.25rem;
+  color: #f77bbf;
 }

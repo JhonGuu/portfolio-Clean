@@ -1,19 +1,24 @@
 .divItem { 
-    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    color: #f77bbf;
+    padding: 0.75rem 1.25rem 0rem 1.25rem;
+}
+
+.divGeneral { 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    
 }
 
 
-@media (min-width: 768px) {
-    .spanActiveItem {
-        font-size: xx-large;
-    }
-}
 .spanActiveItem {
-    margin-left: 0.75rem;
+    
+    margin-left: 1rem;
     font-weight: bold;
-    color: #4ade80;
+    color: #f77bbf;
     font-size: x-large;
-    border-bottom: 3px solid #4ade80;
+    border-bottom: 3px solid #f77bbf;
 
 }
 .divItem {

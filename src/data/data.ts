@@ -88,6 +88,7 @@ export const tools:ISkill[] = [
 
 export const projects:IProject[] = [
     {
+        id: 1,
         name: "COVID Tracker",
         description: "This is a React app that shows a Covid19 tracker",
         image_path: "/images/COVID19.jpg",
@@ -97,6 +98,7 @@ export const projects:IProject[] = [
         key_techs: ["React", "Chart.js", "Material UI"],
     },
     {
+        id: 2,
         name: "COVID Tracker",
         description: "This is a React app that shows a Covid19 tracker",
         image_path: "/images/COVID19.jpg",
@@ -106,6 +108,7 @@ export const projects:IProject[] = [
         key_techs: ["React", "Chart.js", "Material UI"],
     },
     {
+        id: 3,
         name: "COVID Tracker",
         description: "This is a React app that shows a Covid19 tracker",
         image_path: "/images/COVID19.jpg",
@@ -115,6 +118,7 @@ export const projects:IProject[] = [
         key_techs: ["React", "Chart.js", "Material UI"],
     },
     {
+        id: 4,
         name: "COVID Tracker",
         description: "This is a React app that shows a Covid19 tracker",
         image_path: "/images/COVID19.jpg",
@@ -124,6 +128,37 @@ export const projects:IProject[] = [
         key_techs: ["React", "Chart.js", "Material UI"],
     },
     {
+        id: 5,
+        name: "COVID Tracker",
+        description: "This is a React app that shows a Covid19 tracker",
+        image_path: "/images/COVID19.jpg",
+        deployed_url: "https://covid-19-tracker-by-sumit.web-app/",
+        github_url: "https://github.com/Dey-Sumit/Covid-19-Tracker",
+        category: ["django"],
+        key_techs: ["React", "Chart.js", "Material UI"],
+    },
+    {
+        id: 6,
+        name: "COVID Tracker",
+        description: "This is a React app that shows a Covid19 tracker",
+        image_path: "/images/COVID19.jpg",
+        deployed_url: "https://covid-19-tracker-by-sumit.web-app/",
+        github_url: "https://github.com/Dey-Sumit/Covid-19-Tracker",
+        category: ["django"],
+        key_techs: ["React", "Chart.js", "Material UI"],
+    },
+    {
+        id: 7,
+        name: "COVID Tracker",
+        description: "This is a React app that shows a Covid19 tracker",
+        image_path: "/images/COVID19.jpg",
+        deployed_url: "https://covid-19-tracker-by-sumit.web-app/",
+        github_url: "https://github.com/Dey-Sumit/Covid-19-Tracker",
+        category: ["django"],
+        key_techs: ["React", "Chart.js", "Material UI"],
+    },
+    {
+        id: 8,
         name: "COVID Tracker",
         description: "This is a React app that shows a Covid19 tracker",
         image_path: "/images/COVID19.jpg",

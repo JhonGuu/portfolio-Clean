@@ -1,7 +1,7 @@
 body {
-  background-color: black;
+  background-color: #060507;
   font-family: sans-serif;
-  color: #354358;
+  color: white;
 }
 
 a {
@@ -12,4 +12,20 @@ a {
   padding: 0; /* Eliminar relleno */
   margin: 0; /* Eliminar margen */
   font: inherit; /* Heredar la tipografía del elemento padre */
+}
+
+::-webkit-scrollbar-tumb{
+  background-image: linear-gradient(to right bottom, #22c55e, #3b82f6);
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  height: 0px;
+}
+
+button {
+  all: unset; /* Resetea todos los estilos */
+  box-sizing: border-box; /* Asegura que el padding y border se incluyan dentro del tamaño del botón */
+  display: inline-block; /* Asegura que el botón se comporte como un elemento en línea */
+  cursor: pointer; /* Agrega el cursor de pointer para indicar interactividad */
 }

@@ -3,8 +3,7 @@
     height: 65vh;
     overflow-y: scroll;
 }
-.divGeneralCards { 
-    position: relative;
+.divGeneralCards {   
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr)); /* Equivalente a grid-cols-12 en Tailwind */
     gap: 1rem; /* Equivalente a gap-4 en Tailwind */
@@ -12,9 +11,11 @@
 }
 
 .divCard {
+    z-index: 0;
+    position: relative;
     grid-column: span 12 / span 12; /* Equivalente a col-span-12 en Tailwind */
     padding: 0.5rem; /* Equivalente a p-2 en Tailwind */
-    background-color: #e5e7eb;
+    background-color: #1d1d1d;
     border-radius: 0.5rem;
   }
   

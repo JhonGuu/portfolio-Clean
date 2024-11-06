@@ -2,7 +2,7 @@
     margin-top: 0.5rem;     /* 8px */
   margin-bottom: 0.5rem;  /* 8px */
   color: #ffffff;         /* Texto blanco */
-  background-color: #d1d5db; /* Fondo gris (#d1d5db es el equivalente de gray-300) */
+  background-color: #080808; /* Fondo gris (#d1d5db es el equivalente de gray-300) */
   border-radius: 9999px;  /* Bordes redondeados en forma de círculo */
 }
 
@@ -14,7 +14,7 @@
   padding-top: 0.25rem;      /* 4px de padding arriba */
   padding-bottom: 0.25rem;   /* 4px de padding abajo */
   border-radius: 9999px;     /* Bordes redondeados en forma de círculo */
-  background-image: linear-gradient(to right, #22c55e, #3b82f6); /* Degradado de verde (#22c55e) a azul (#3b82f6) */
+  background-image: linear-gradient(to right, #f77bbf, #f655ae); /* Degradado de verde (#22c55e) a azul (#3b82f6) */
 }
 
 .iconBar { 
