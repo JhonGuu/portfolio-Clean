@@ -23,14 +23,14 @@ function Projects() {
      setActive(category);
   }
   return (
-    <motion.div className={style.divGeneral} variants={routeAnimation} initial='initial' animate='animate' exit={'exit'}>
+    <motion.div className='py-2 px-5 h-[65vh] overflow-scroll' variants={routeAnimation} initial='initial' animate='animate' exit={'exit'}>
       <ProjectsNavbar handlerFilterCategory={handlerFilterCategory } active={active} />
-      <motion.div className={style.divGeneralCards} variants={stagger} initial='initial' animate='animate'>
+      <motion.div className='grid grid-cols-12 gap-4 my-3 mx-0' variants={stagger} initial='initial' animate='animate'>
 
         {
           projects.map(project => (
             <motion.div 
-              className={style.divCard} 
+              className='z-0 relative col-span-12 p-2 bg-[#1d1d1d] rounded-lg md:col-span-6 lg:col-span-4' 
               variants={fadeInUp}
               key={project.id}
               style={{zIndex: showDetail === project.id ? 100 : 1}	}
