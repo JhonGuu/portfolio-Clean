@@ -32,15 +32,15 @@ export const ProjectCard: FunctionComponent<{
         <img
           src={image_path}
           alt={name}
-          className={style.imageProject}
+          className='cursor-pointer'
           width={300}
           height={150}
           onClick={() => setShowDetail(id)}
         />
-        <p className={style.nameProject}>{name}</p>
+        <p className='flex text-white font-bold my-2 mx-0 items-center '>{name}</p>
         
         {showDetail === id && (
-          <div className={style.details}>
+          <div className='grid w-full h-auto text-white bg-[#090909] absolute top-0 left-0 z-50 gap-x-12 rounded-xl md:p-10 md:grid-cols-2 md:gap-x-12'>
             <motion.div variants={stagger} initial="initial" animate="animate">
               <motion.div variants={fadeInUp} className={style.divImage} >
                 <img
